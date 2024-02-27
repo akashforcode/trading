@@ -15,7 +15,7 @@ kite = KiteApp(enctoken=enctoken)
 print(kite.margins())
 print(kite.ltp("MCX:CRUDEOIL24FEB7500CE"))
 
-order = kite.place_order(variety=kite.VARIETY_AMO,
+order = kite.place_order(variety=kite.VARIETY_REGULAR,
                          exchange=kite.EXCHANGE_MCX,
                          tradingsymbol="CRUDEOIL24FEB6500CE",
                          transaction_type=kite.TRANSACTION_TYPE_BUY,
