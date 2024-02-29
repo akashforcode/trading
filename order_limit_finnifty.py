@@ -13,18 +13,18 @@ kite = KiteApp(enctoken=enctoken)
 
 # Basic calls
 print(kite.margins())
-print(kite.ltp("MCX:CRUDEOIL24FEB7500CE"))
+print(kite.ltp("NFO:FINNIFTY24FEB20800CE"))
 
 import time
-for i in range(10):
+for i in range(1):
     order = kite.place_order(variety=kite.VARIETY_REGULAR,
-                              exchange=kite.EXCHANGE_NSE,
-                              tradingsymbol="IDEA",
+                              exchange=kite.EXCHANGE_NFO,
+                              tradingsymbol="FINNIFTY24FEB20800CE",
                               transaction_type=kite.TRANSACTION_TYPE_BUY,
-                              quantity=1,
+                              quantity=40,
                               product=kite.PRODUCT_MIS,
                               order_type=kite.ORDER_TYPE_LIMIT,
-                              price=5,
+                              price=0.10,
                               validity=None,
                               disclosed_quantity=None,
                               trigger_price=None,
